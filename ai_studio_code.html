@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeChat Clone</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-pic me"></div>
+                <h3>My Profile</h3>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <ul class="contact-list">
+                <li class="contact active">
+                    <div class="contact-pic alice"></div>
+                    <div class="contact-info">
+                        <h4>Alice</h4>
+                        <p>Hey! Are we still on for today?</p>
+                    </div>
+                </li>
+                <li class="contact">
+                    <div class="contact-pic bob"></div>
+                    <div class="contact-info">
+                        <h4>Bob</h4>
+                        <p>Sure, I'll send the files later.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-area">
+            <div class="chat-header">
+                <h3>Alice</h3>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message received">
+                    <div class="profile-pic-small alice"></div>
+                    <div class="message-bubble">Hey! Are we still on for today?</div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <textarea id="message-input" placeholder="Type a message..."></textarea>
+                <div class="chat-input-footer">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
